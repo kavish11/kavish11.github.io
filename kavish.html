@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <style>
+        body{
+            background: #e3e3e3;
+            background-image: url("bg1.png"), url("bg2.png");
+            background-repeat: repeat-x, repeat;        
+        }
+        .row-centered {
+            text-align:center;
+        }
+        .col-centered {
+            display:inline-block;
+            float:none;
+            text-align:left;
+            margin-right:-4px;
+        }
+        .typed-cursor{
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }    
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="typed.min.js"></script>        
+        <script>
+          $(function(){
+              $(".intro_header").typed({
+                strings: [
+                            "Love Startups! ^2000", 
+                            "Understand Startups ^2000", 
+                            "Help Startups Decide What They Stand For ^2000"
+                        ],
+                typeSpeed: 0,
+                loop: true  
+              });
+          });
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row hidden">
+              <div class="col-sm-1">home</div>
+              <div class="col-sm-1">blog</div>
+              <div class="col-sm-1">contact</div>
+            </div>
+
+            <div class="row row-centered">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-centered" style="margin-top:10%;margin-bottom:5%;">
+                    <img class='img-responsive text-center' src="thinkwhy.png" />
+                </div>
+            </div>    
+            <div class="row row-centered">    
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-centered" style="margin-top:2%;margin-bottom:2%;">
+                    <center>
+                        <span>We </span>
+                        <span class='intro_header'></span>
+                    </center>    
+                </div>
+            </div>
+        </div>
+        <div style="position:fixed; bottom:2%; right:2%; font-size:80%;">    
+            <ul class="list-group">
+              <li class="list-group-item"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;+91 9067980538</li>
+              <li class="list-group-item"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;kavish@thinkwhy.co</li>
+            </ul>    
+        </div>        
+    </body>
+</html>
